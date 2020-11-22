@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Noka Kipiani">
+    <meta property="og:site_name" content="Clientela"/>
+    <meta property="og:title" content="Front End Developer Task"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Front End Developer Task"/>
+    <meta property="og:image" content="assets/img/logo.png"/>
+    <link rel="stylesheet" href="./assets/img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    <title>Clientela</title>
+</head>
+<body>
+    <main id="main">
+        <header class="container">
+            <div class="header-block d-flex justify-content-between align-items-center">
+                <div class="left-menu">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                </div>
+                <a href="https://www.clientela.com/" target="_blank" class="logo">
+                   <img src="assets/img/logo.png" alt="Clientela">
+                </a>
+                <div class="language-bar d-flex align-items-center" id="dropdown">
+                    <span>
+                        EN
+                    </span>
+                    <img src="assets/img/arrow-icon.svg" alt="arrow icon">
+                    <div id="dropdown-content">
+                        <ul>
+                            <li>KA</li>
+                            <li>DEU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-block">
+            <div class="container">
+                <div class="welcome-block">
+                    <div class="titles">
+                        <h2 class="primary-title">Welcome</h2>
+                        <h4 class="secondary-title">Please select one of our services</h4>
+                    </div>
+                    <div class="services d-flex flex-column" id="services">
+                        <button class="service" value="Personal shopping">
+                            <div class="service-item d-flex align-items-center">
+                                <img class="service-img" src="assets/img/personal-service.png" alt="personal-service">
+                                <span class="service-title">Personal shopping</span>
+                            </div>
+                            <div class="chosen-service-item">
+                            </div>
+                        </button>
+                        <button class="service" value="Skin care services">
+                            <div class="service-item d-flex align-items-center">
+                                <img class="service-img" src="assets/img/skin.svg" alt="skin">
+                                <span class="service-title">Skin care services</span>
+                            </div>
+                            <div class="chosen-service-item">
+                            </div>
+                        </button>
+                        <button class="service" id="disable" disabled>
+                            <div class="service-item d-flex align-items-center">
+                                <img class="service-img" src="assets/img/ask-store.png" alt="ask store">
+                                <span class="service-title">Store locator (comming soon)</span>
+                                <div class="disabled"></div>
+                            </div>
+                            <div class="chosen-service-item">
+                        </button>
+                    </div>
+                </div>
+                <div class="locations-block">
+                    <form id="form-submit" >
+                        <h4 class="secondary-title">Please select your preferred location</h4>
+                        <ul class="location-parent-wrapper">
+                            <li class="child-wrapper">
+                                <label for="location01" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location01">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Avenue, New York, NY</span>  
+                                </label>
+                            <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location02" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location02">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location03" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location03">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location04" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location04">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location05" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location05">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location06" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location06">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                            <li class="child-wrapper">
+                                <label for="location07" class="input-title">
+                                    <input type="radio" name="location" class="input-content" id="location07">
+                                    <span class="radio-ciricle"></span>
+                                    <span class="location-title">Tysons Corner Center, VA</span>
+                                </label>
+                                <div class="active-location"></div>
+                            </li>
+                        </ul>
+                        <button type="submit" id="confirm" class="submit">
+                            Confirm
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div  id="popup">
+            <div id="popup-content">
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
