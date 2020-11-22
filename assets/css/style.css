@@ -116,12 +116,12 @@ button:focus {
     left: 0;
     border: 1px solid #000;
     font-size: 12px;
-    width: 40px;
+    width: 45px;
     border-radius: 2px; 
 }
 #dropdown-content li {
     background: #fff;
-    padding: 1px 3px;
+    padding: 5px 3px;
 }
 #dropdown-content li:hover {
     background-color: #f0f0f0;;
@@ -184,7 +184,9 @@ button:focus {
     -o-object-fit: contain;
        object-fit: contain;
 }
-
+.fill {
+    fill : #000;
+}
 .service-title {
     max-width: 150px;
     margin: 0 auto;
@@ -202,21 +204,39 @@ button:focus {
     z-index: 2;
     pointer-events: none;
 }
+.chosen-service-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background: none;
+    border: none;
+    background-color : white;
+    color: #333333;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(181, 181, 181, 0.5);
+            box-shadow: 0 2px 4px rgba(181, 181, 181, 0.5);
+    padding: 16px 20px;
+    margin : 0 0 18px;
+}
 .chosen-service-item:first-child{
     margin: 0 18px 18px 0;
 }
 #chosen-content{
     display: none;
 }
+.channel-buttons {
+    display: flex;
+    justify-content: space-between;
+}
 /* ending welcome section styles */
 
 /* starting location section styles */
 .location-parent-wrapper{
-    margin: 28px  0 0;
+    padding: 28px 0 15px;
 }
-.locations-block{
-    background-color: #fff;
-    padding: 23px 22px 32px;
+.locations-block form{
+    padding: 23px 22px 0;
 }
 /* .child-wrapper:first-child {
     margin: 24px 0 14px;
@@ -356,5 +376,12 @@ input[type="radio"]{
 }
 #popup-content span:first-child {
     margin: 0 10px 0 0;
+}
+.sticky-btn{
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    z-index: 3;
+    padding: 0 0 20px;
 }
 /*ending  popup styles */

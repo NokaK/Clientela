@@ -53,27 +53,46 @@
                     <div class="services d-flex flex-column" id="services">
                         <button class="service" value="Personal shopping">
                             <div class="service-item d-flex align-items-center">
-                                <img class="service-img" src="assets/img/personal-service.png" alt="personal-service">
+                                <svg class="service-img" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+                                    <g fill-rule="evenodd">
+                                        <g fill-rule="nonzero" class="fill">
+                                            <g>
+                                                <path d="M14 15c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6.4c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4 2.4 1.077 2.4 2.4-1.077 2.4-2.4 2.4z" transform="translate(-19 -15) translate(19 15)"/>
+                                                <path d="M26.327 11.664l-.178-.546h-2.315v-3.97H21.41V0l-2.632 1.982c-1.023.77-2.29 1.194-3.569 1.194h-4.872c-2.347 0-4.301 1.72-4.679 3.971H3.166v3.97H.85l-.178.547C-1.163 17.27.842 23.373 5.66 26.85l.207.149h15.264l.207-.15c4.819-3.477 6.824-9.58 4.988-15.186zm-15.99-6.9h4.871c1.619 0 3.223-.536 4.518-1.511l.101-.077v3.971H7.273c.352-1.368 1.592-2.382 3.063-2.382zm-5.59 3.971h17.506v2.383H4.747V8.735zM20.62 25.412H6.38c-2.85-2.147-4.536-5.35-4.77-8.736h4.77v-1.588H1.609c.052-.795.185-1.593.403-2.382h22.978c.218.79.35 1.587.403 2.382h-4.774v1.588h4.771c-.234 3.386-1.92 6.59-4.77 8.736z" transform="translate(-19 -15) translate(19 15)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                                 <span class="service-title">Personal shopping</span>
                             </div>
-                            <div class="chosen-service-item">
+                            <div class="d-flex justify-content-between">
                             </div>
                         </button>
                         <button class="service" value="Skin care services">
                             <div class="service-item d-flex align-items-center">
-                                <img class="service-img" src="assets/img/skin.svg" alt="skin">
+                                <svg class="service-img" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+                                    <g fill-rule="evenodd">
+                                        <g  fill-rule="nonzero" class="fill">
+                                            <g>
+                                                <path d="M14 15c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6.4c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4 2.4 1.077 2.4 2.4-1.077 2.4-2.4 2.4z" transform="translate(-19 -15) translate(19 15)"/>
+                                                <path d="M26.327 11.664l-.178-.546h-2.315v-3.97H21.41V0l-2.632 1.982c-1.023.77-2.29 1.194-3.569 1.194h-4.872c-2.347 0-4.301 1.72-4.679 3.971H3.166v3.97H.85l-.178.547C-1.163 17.27.842 23.373 5.66 26.85l.207.149h15.264l.207-.15c4.819-3.477 6.824-9.58 4.988-15.186zm-15.99-6.9h4.871c1.619 0 3.223-.536 4.518-1.511l.101-.077v3.971H7.273c.352-1.368 1.592-2.382 3.063-2.382zm-5.59 3.971h17.506v2.383H4.747V8.735zM20.62 25.412H6.38c-2.85-2.147-4.536-5.35-4.77-8.736h4.77v-1.588H1.609c.052-.795.185-1.593.403-2.382h22.978c.218.79.35 1.587.403 2.382h-4.774v1.588h4.771c-.234 3.386-1.92 6.59-4.77 8.736z" transform="translate(-19 -15) translate(19 15)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                
                                 <span class="service-title">Skin care services</span>
                             </div>
-                            <div class="chosen-service-item">
+                            <div class="d-flex justify-content-between">
                             </div>
                         </button>
-                        <button class="service" id="disable" disabled>
+                        <button  id="disable" disabled>
                             <div class="service-item d-flex align-items-center">
                                 <img class="service-img" src="assets/img/ask-store.png" alt="ask store">
                                 <span class="service-title">Store locator (comming soon)</span>
                                 <div class="disabled"></div>
                             </div>
-                            <div class="chosen-service-item">
+                            
                         </button>
                     </div>
                 </div>
@@ -138,9 +157,12 @@
                                 <div class="active-location"></div>
                             </li>
                         </ul>
-                        <button type="submit" id="confirm" class="submit">
-                            Confirm
-                        </button>
+                        <div class="sticky-btn">
+                            <button type="submit" id="confirm" class="submit">
+                                Confirm
+                            </button>
+                        </div>
+                      
                     </form>
                 </div>
             </div>
@@ -153,4 +175,24 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
+<!-- <div class="d-flex justify-content-between channel-buttons">
+    <button class="service-item chosen-service-item d-flex align-items-center" value="In-store">
+        <img class="service-img" src="assets/img/shop.svg" alt="shop">
+        <span class="service-title">In-store</span>
+    </button>
+    <button class="service-item chosen-service-item d-flex align-items-center" value="video">
+        <img class="service-img" src="assets/img/video.svg" alt="video">
+        <span class="service-title">Video</span>
+    </button>
+</div> -->
+<!-- <div class="chosen-location-info">
+    <h5>Adress</h5>
+    <p> 640 5th Ave, New York, NY 10019, USA</p>
+</div>
+<div class="chosen-location-info">
+    <h5 >Opening hours</h5>
+    <p>Monday - Saturday: 09:30 - 21:00Sunday: 11:00 - 18:30</p>
+</div>
+<div class="location-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4366088603824!2d-73.96780638463315!3d40.77441457932519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sge!4v1606046821939!5m2!1sen!2sge" width="300" height="175" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div> -->
