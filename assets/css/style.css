@@ -173,11 +173,6 @@ button:focus {
 .service-item:focus {
     outline: none;
 }
-.chosen-service{
-    background-color : #000;
-    color: #fff;
-}
-
 .service-img {
     height: 29px;
     width: 29px;
@@ -221,6 +216,10 @@ button:focus {
 }
 .chosen-service-item:first-child{
     margin: 0 18px 18px 0;
+}
+.chosen-service{
+    background-color : #000;
+    color: #fff;
 }
 #chosen-content{
     display: none;
