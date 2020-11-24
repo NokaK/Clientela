@@ -170,7 +170,7 @@ window.onload = () => {
   activeLocation.appendChild(timeTitle);
 
   const timeDesc = document.createElement('p');
-  timeDesc.textContent = 'Monday - Saturday: 09:30 - 21:00Sunday: 11:00 - 18:30';
+  timeDesc.textContent = 'Monday - Saturday: 09:30 - 21:00  Sunday: 11:00 - 18:30';
   activeLocation.appendChild(timeDesc);
 
   const map = document.createElement('div');
