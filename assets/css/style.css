@@ -1,4 +1,3 @@
-
 /* starting  reset css */
 *{
     margin: 0;
@@ -169,6 +168,7 @@ button:focus {
             box-shadow: 0 2px 4px rgba(181, 181, 181, 0.5);
     padding: 16px 20px;
     margin : 0 0 18px;
+    cursor: pointer
 }
 .service-item:focus {
     outline: none;
@@ -188,6 +188,16 @@ button:focus {
     font-family: GothamHTF-Medium;
     font-size : 16px;
 }
+#disable {
+    pointer-events: none;
+    cursor: none;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+}
 .disabled {
     width: 100%;
     height: 100%;
@@ -197,11 +207,14 @@ button:focus {
     border-radius: 4px;
     background-color:rgba(255, 255, 255, 0.7);
     z-index: 2;
-    pointer-events: none;
 }
 .chosen-service-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     position: relative;
     background: none;
@@ -213,6 +226,7 @@ button:focus {
             box-shadow: 0 2px 4px rgba(181, 181, 181, 0.5);
     padding: 16px 20px;
     margin : 0 0 18px;
+    cursor: pointer;
 }
 .chosen-service-item:first-child{
     margin: 0 18px 18px 0;
@@ -225,8 +239,12 @@ button:focus {
     display: none;
 }
 .channel-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 /* ending welcome section styles */
 
@@ -237,9 +255,6 @@ button:focus {
 .locations-block form{
     padding: 23px 22px 0;
 }
-/* .child-wrapper:first-child {
-    margin: 24px 0 14px;
-} */
 .child-wrapper {
     border: 1px solid #919191;
     margin: 0 0 14px;
@@ -249,6 +264,7 @@ button:focus {
     color: #393939;
     letter-spacing: 0.8px;
     font-family: GothamHTF-Book;
+    cursor: pointer;
 }
 .input-title{
     width: 100%;
@@ -377,6 +393,7 @@ input[type="radio"]{
     margin: 0 10px 0 0;
 }
 .sticky-btn{
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     background: #fff;
